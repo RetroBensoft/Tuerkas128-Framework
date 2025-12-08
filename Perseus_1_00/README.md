@@ -20,9 +20,11 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
 * Ramón Fernández Ameijeiras (sinclair joystick tester)
 * David Gonzalo aka Z80user (code optimization for the loader)
 
-### 
-* Run `makefile_win.bat` to generate 'perseus.tap'
-* 'makefile_win.bat' uses PASMO to assembly the code, 'makefile_win.ps1' (Windows PowerShell) to generate 'loader.asm' from 'loader_template.asm', and and GENTAPE to produce 'perseus.tap'
+### Notes
+* Run `makefile_win.bat` to generate `perseus.tap`
+* `makefile_win.bat` uses PASMO to assembly the code, `makefile_win.ps1` (Windows PowerShell) to generate `loader.asm` from `loader_template.asm`, and and GENTAPE to produce `perseus.tap'
+* Main code is in `bank_2.asm`. If you want to dive into the code you can start from here.
+* If you want to make mods, you can 
 _______________________________
 
 Created by RetroBensoft, 2025
