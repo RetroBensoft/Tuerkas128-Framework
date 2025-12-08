@@ -9,7 +9,7 @@ Tuerkas128 Framework is a set of Z80 assembler libraries for developing games fo
 
 Tutorials are available at https://www.youtube.com/@RetroBensoft (only in spanish, sorry)
 
-Instead of publishing the framework raw code, the complete code of the games developed by RetroBensoft with Tukeras128 Framework is shared here. By doing so, it is much easier to understand the code because a real example is provided.
+Instead of publishing the framework raw code, the complete code of the games developed by RetroBensoft with Tukeras128 Framework is shared here. Real examples are provided, so that it is much easier to understand the code.
 
 Available games:
 * Perseus (2025)  
