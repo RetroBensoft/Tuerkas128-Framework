@@ -31,7 +31,7 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
 * The `_doc_` folder contains documentation.
 * The Tuerkas128 Framework core is within the `framework` folder. Some customization can be made by modifying `tuerkas128_constants.asm` and `tuerkas128_global.asm`, but any other file within this folder must not be changed unless you know exactly what you are doing.
 * The `framework\AY` folder is the sound tracker based upon the AY-3-8910/8912 specifications.
-* The `FSM` folder contains the code for controlling sprites, animated blocks and main char behaivour. The operation of animated blocks is hard-wired in the framework, but it can be customized using parameters. Sprites and main char can be controlled by programming FSMs in assembly language using Tuerkas128 Framework data structures. FSM stands for Finite State Machine. 
+* The `FSM` folder contains the code for controlling sprites, animated blocks and main char behaivour. The operation of animated blocks is hard-wired in the framework, but it can be customized using parameters. Sprites and main char can be fully controlled by programming their FSMs in assembly language using Tuerkas128 Framework data structures. FSM stands for Finite State Machine. 
 _______________________________
 
 Created by RetroBensoft, 2025
