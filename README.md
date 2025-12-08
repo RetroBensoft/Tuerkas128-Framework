@@ -14,7 +14,7 @@ Instead of publishing the framework raw code, the complete code of the games dev
 Available games:
 * Perseus (2025)  
 
-###Requirements
+### Requirements
 * Windows 10/11(I'm pretty sure a Lixux version is easy to implement)
 * pasmo.exe and gentape.exe folders must be in Windows PATH variable
 
