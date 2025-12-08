@@ -25,6 +25,7 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
 * `makefile_win.bat` uses PASMO to assembly the code, `makefile_win.ps1` (Windows PowerShell) to generate `loader.asm` from `loader_template.asm`, and GENTAPE to produce `perseus.tap`
 * Main code is in `bank_2.asm`. If you want to dive into the code you can start from here.
 * If you want to master Tuerkas128 Framework a good way to start with is by doing mods. The easiest mod is changing screens. Blocks and superblocks definitions are in the `screens` folder. Game map is defined in the `screens` folder as well.
+* Tutorials are available at https://www.youtube.com/@RetroBensoft (only in spanish, sorry)
 
 ### Project content
 * The `_doc_` folder contains documentation
