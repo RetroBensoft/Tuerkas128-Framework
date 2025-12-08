@@ -6,7 +6,7 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
 * Windows 10/11 (I'm pretty sure a Lixux version is easy to implement)
 * pasmo.exe and gentape.exe folders must be in Windows PATH variable
 
-### Development tools:
+### Development tools
 * Tuerkas128 Framework by RetroBensoft (framework)
 * Notepad++ by Don Ho (text editor)
 * Pasmo by Julian Albo (Z80 assembler)
