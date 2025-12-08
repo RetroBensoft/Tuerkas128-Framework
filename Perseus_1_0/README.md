@@ -35,8 +35,8 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
   * `tuerkas128_AB_types.asm` includes all types of animated blocks. If an animated block must have a particular parameter, it must have its own type. 
   * `tuerkas128_AB_def_tables.asm` contains the parameters for every type of animated block. Two or more animated blocks of different type can share the same parameters. For instance, T128_ANIMBLK_STRINGR and T128_ANIMBLK_STRINGL. Or T128_ANIMBLK_SPIKETOP1 and T128_ANIMBLK_SPIKEBOT1.
   * `tuerkas128_SPR_types.asm` includes all types of sprites. If a sprite must have a particular parameter, it must have its own type. 
-  * `tuerkas128_SPR_def_tables.asm` contains the parameters for every type of animated block. Two or more sprites of different type can share the same parameters. For instance, T128_SPRITE_SKELETON, T128_SPRITE_CYCLOP, T128_SPRITE_MINOTAURUS and T128_SPRITE_GRAIA. Or T128_SPRITE_DISCOBOLUS and T128_SPRITE_PEGASUS.
-  * `tuerkas128_SPR_classes.asm` are 
+  * `tuerkas128_SPR_def_tables.asm` contains the parameters for every type of sprites. Two or more sprites of different type can share the same parameters. For instance, T128_SPRITE_SKELETON, T128_SPRITE_CYCLOP, T128_SPRITE_MINOTAURUS and T128_SPRITE_GRAIA. Or T128_SPRITE_DISCOBOLUS and T128_SPRITE_PEGASUS.
+  * `tuerkas128_SPR_classes.asm` contains every sprite class and routines for its FSM. Sprite class 0 is reserved for _CHILD_ sprites. A class defines the way a sprite behaves, using a routine written in assembly code. All sprites of the same class have the same behaviour. For instance, T128_SPRITE_SKELETON, T128_SPRITE_CYCLOP, T128_SPRITE_MINOTAURUS, T128_SPRITE_GRAIA, T128_SPRITE_DWARF and T128_SPRITE_CYCLOP belongs to the class SPR_ClassWalker.
 * The `gamevars` folder contains the game variables and timers: energy, objects or anything your game needs.
 * The `graphics` folder contains bitmaps for animated blocks, sprites and main char.
 _______________________________
