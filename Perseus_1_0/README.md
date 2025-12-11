@@ -54,7 +54,7 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
   * The `graphics\SPR\` folder contains the bitmaps included in `tuerkas128_spr_bitmaps.asm`.
   * The `graphics\MAINCHAR\` folder must containt a file `tuerkas128_spr_bitmap` with the bitmap of the main char. [SPOILERS AHEAD] Perseus includes two extra files here: one for the bitmap of Perseus himself and another one for the bitmpa of the unexpected appearance of Medusa.
  
-* The `intro_menu\` folder contains all the files you need for the intro and the menu. Theese files must be included in bank_S1.asm, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named T128_IntroBS1 must exists in one of this files. Thius routine is called right after the game is loaded.
+* The `intro_menu\` folder contains all the files you need for the intro and the menu. Theese files must be included in bank_S1.asm, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named T128_IntroBS1 must exists in one of this files. Thius routine is called right after the game is loaded. The framework does not provided code for creating the intro or the menu. All must be coded in assembly language by the author.
   
 _______________________________
 
