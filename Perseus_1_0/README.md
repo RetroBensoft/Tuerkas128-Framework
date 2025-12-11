@@ -48,7 +48,8 @@ A game written in Z80 assembly code for the ZX Spectrum 128k
 * The `gamevars\` folder contains the game variables and timers. For instance: energy, collected objects or anything your game needs.
   
 * The `graphics\` folder contains the bitmaps for animated blocks, sprites and main char.
-  * The `tuerkas128_ab_bitmaps.asm` file must contain a lookup table with as much elements as animated block types. Every entry in this table is pointer to an animated block bitmap (an its size in bytes). Two or more animated blocks of different type can share the same bitmap. for instance, T128_ANIMBLK_SPIKETOP1 and T128_ANIMBLK_SPIKETOP2. Or T128_ANIMBLK_SPIKEBOT1 and T128_ANIMBLK_SPIKEBOT2. 
+  * The `tuerkas128_ab_bitmaps.asm` file must contain a lookup table with as much elements as animated block types. Every entry in this table is pointer to an animated block bitmap (an its size in bytes). Two or more animated blocks of different type can share the same bitmap. For instance, T128_ANIMBLK_SPIKETOP1 and T128_ANIMBLK_SPIKETOP2. Or T128_ANIMBLK_SPIKEBOT1 and T128_ANIMBLK_SPIKEBOT2.
+  * The `tuerkas128_spr_bitmaps.asm` file must contain a lookup table with as much elements as sprite types. Every entry in this table is pointer to a sprite bitmap (an its size in bytes). Two or more sprites of different type can share the same bitmap. No examples here.
 _______________________________
 
 Created by RetroBensoft, 2025
