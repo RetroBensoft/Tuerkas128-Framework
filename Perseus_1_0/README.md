@@ -57,10 +57,12 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
  
 * The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch. Perseus, for instance, includes in this folder the file `tuerkas128_code_text.asm` with routines for printing text on screen.
 
-* The `scoreboard\` folder must contain a file `tuerkas128_SB_routines.asm`. This file must contain a lookup table for every scoreboard type. Perseus has 3 scoreboard types:
+* The `scoreboard\` folder must contain a file `tuerkas128_SB_routines.asm`. This file must contain a lookup table (SB_RenderRoutines) with an entry for every scoreboard type. Perseus has 3 scoreboard types:
   * DIGIT: It displays a variable by printing a number (for instance, number of coins, or number of knives)
   * BAR:  It displays a variable by rendering a bar (for instance, energy)
   * ICON: It displays an on/off variable (for instance, invisibility or speed up)
+  The values defined in the SB_RenderRoutines lookup table are the addresses of the routines that produce every display. There must be a file for every scoreboard type with the code that renders an specific scoreboard type. The framework does not include code to render the scoreboard.
+  The files with the code for every scoreboard type must be included in in the file `framework\bank_0.asm`.
   
 _______________________________
 
