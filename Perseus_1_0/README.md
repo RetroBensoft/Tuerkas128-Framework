@@ -62,9 +62,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   * BAR:  It displays a variable by rendering a bar (for instance, energy)
   * ICON: It displays an on/off variable (for instance, invisibility or speed up)
   
-  The values defined in the SB_RenderRoutines lookup table are the addresses of the routines that produce every display. There must be a file for every scoreboard type with the code that renders an specific scoreboard type. The framework does not include code to render the scoreboard.
-
-  The files with the code for every scoreboard type must be included in in the file `framework\tuerkas128_code_scoreboard.asm`.
+  The values defined in the SB_RenderRoutines lookup table are the addresses of the routines that produce every display. There must be a file in `scoreboard\` for every scoreboard type with the code that renders an specific scoreboard type. The framework does not include code to render the scoreboard. Theese filesmust be included in in the file `framework\tuerkas128_code_scoreboard.asm`.
   
 _______________________________
 
