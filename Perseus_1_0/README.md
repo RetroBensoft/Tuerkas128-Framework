@@ -78,19 +78,19 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
     
     <img width="223" height="79" alt="image" src="https://github.com/user-attachments/assets/541f1f24-358c-4b79-92f7-f6bdadf957f7" />
 
-* `tuerkas128_data_RB2025.asm` bitmap and attributes for the lower-left graphic in the menu
+  * `tuerkas128_data_RB2025.asm` bitmap and attributes for the lower-left graphic in the menu
 
     <img width="373" height="55" alt="image" src="https://github.com/user-attachments/assets/47cdb6f1-4952-4464-89bf-49d8faa6c78e" />
 
-* `tuerkas128_data_SB.asm` bitmap and attributes for the scoreboard
+  * `tuerkas128_data_SB.asm` bitmap and attributes for the scoreboard
 
     <img width="766" height="50" alt="image" src="https://github.com/user-attachments/assets/f104202c-0a36-492a-a9fd-ee56521fc3c7" />
 
-* `tuerkas128_data_strips.asm` bitmap and attributes for the intro cartoon stripes
+  * `tuerkas128_data_strips.asm` bitmap and attributes for the intro cartoon stripes
 
     <img width="1037" height="783" alt="image" src="https://github.com/user-attachments/assets/edaa7192-5b0a-4f7b-835b-59c2e185ad28" />
 
-* `tuerkas128_data_tukers.asm` bitmap for the walking Tuerkas in the intro
+  * `tuerkas128_data_tukers.asm` bitmap for the walking Tuerkas in the intro
       
     <img width="298" height="657" alt="image" src="https://github.com/user-attachments/assets/9259cd89-6353-4379-87fb-4f13c4dffc32" />
 
