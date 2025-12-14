@@ -5,7 +5,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
 
 ### Requirements
 * Windows 10/11 (I'm pretty sure a Linux version is easy to implement)
-* pasmo.exe and gentape.exe folders must be in Windows PATH variable
+* pasmo.exe and gentape.exe folders must be in the Windows PATH variable
 
 ### Development tools
 * Tuerkas128 Framework by RetroBensoft (framework)
