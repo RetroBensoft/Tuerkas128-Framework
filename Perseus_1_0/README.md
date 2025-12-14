@@ -67,9 +67,11 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   * `tuerkas128_code_text.asm` routines for managing the menu
   * `tuerkas128_code_text.asm` routines for printing text on screen
   * `tuerkas128_data_intro_tittle.asm` bitmap and attributes for the intro tittle
+    
     <img width="666" height="168" alt="image" src="https://github.com/user-attachments/assets/76c48436-049b-458c-8770-e0784ff46f40" />
 
   * `tuerkas128_data_notAI.asm` bitmap and attributes for the lower-right graphic in the menu
+    
     <img width="223" height="79" alt="image" src="https://github.com/user-attachments/assets/541f1f24-358c-4b79-92f7-f6bdadf957f7" />
 
 
