@@ -37,7 +37,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   * Enable music
   * Disable music
   * Enable FX
-  * Disable Fx
+  * Disable FX
   * Init a song (from bank 2, 0 and BS1)
   * Init an FX (from bank 2, 0 and BS1)
   * Stop music
