@@ -55,11 +55,16 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   * The `graphics\SPR\` folder contains the bitmaps included in `tuerkas128_spr_bitmaps.asm`.
   * The `graphics\MAINCHAR\` folder must containt a file `tuerkas128_spr_bitmap.asm` with the bitmap of the main char. **SPOILERS AHEAD** Perseus includes two extra files here: one for the bitmap of Perseus himself and another one for the bitmpa of the unexpected appearance of Medusa.
  
-* The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch.
+* The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch.There are 2 requirements:
+  * A PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded.
+  * A PUBLIC label named *M_SMC_01_BS1* must exists in one of this files. A jp 0 instruction must be located at this address. The framework dynamicly replaces the 0 with the address of the game starting point (GameSetup)
 
-  When the menu lauches the game must do at leeast two actions:
+  When the menu launches the game two actions must be done (at least):
   * Render the scoreboard
   * Jump to GameSetup in `bank_2.asm`
+
+    <img width="1129" height="816" alt="image" src="https://github.com/user-attachments/assets/c6870274-694e-4e01-a225-3ca1c94567a8" />
+
 
   Perseus includes in this folder:
 
