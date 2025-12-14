@@ -63,7 +63,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   <img width="666" height="168" alt="image" src="https://github.com/user-attachments/assets/76c48436-049b-458c-8770-e0784ff46f40" />
 
   * `tuerkas128_data_notAI.asm` bitmap and attributes for the lower-right graphic in the menu
-  * <img width="223" height="79" alt="image" src="https://github.com/user-attachments/assets/541f1f24-358c-4b79-92f7-f6bdadf957f7" />
+  <img width="223" height="79" alt="image" src="https://github.com/user-attachments/assets/541f1f24-358c-4b79-92f7-f6bdadf957f7" />
 
 
 * The `scoreboard\` folder must contain the file `tuerkas128_SB_routines.asm`. This file includes a lookup table (SB_RenderRoutines) with an entry for every scoreboard type. Perseus has 3 scoreboard types:
