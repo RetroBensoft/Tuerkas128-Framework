@@ -57,7 +57,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
  
 * The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch. There are 2 requirements:
   * A PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded.
-  * A PUBLIC label named *M_SMC_01_BS1* must exists in one of this files. A jp 0 instruction must be located at this address. The framework dynamically replaces the 0 with the address of the game starting point (GameSetup)
+  * A PUBLIC label named *M_SMC_01_BS1* must exists in one of this files. A *jp 0* instruction must be located at this address. The framework dynamically replaces the 0 with the address of the game starting point (GameSetup)
 
   When the menu launches the game two actions must be done (at least):
   * Render the scoreboard
@@ -78,6 +78,21 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
     
     <img width="223" height="79" alt="image" src="https://github.com/user-attachments/assets/541f1f24-358c-4b79-92f7-f6bdadf957f7" />
 
+* `tuerkas128_data_RB2025.asm` bitmap and attributes for the lower-left graphic in the menu
+
+    <img width="373" height="55" alt="image" src="https://github.com/user-attachments/assets/47cdb6f1-4952-4464-89bf-49d8faa6c78e" />
+
+* `tuerkas128_data_SB.asm` bitmap and attributes for the scoreboard
+
+    <img width="766" height="50" alt="image" src="https://github.com/user-attachments/assets/f104202c-0a36-492a-a9fd-ee56521fc3c7" />
+
+* `tuerkas128_data_strips.asm` bitmap and attributes for the intro cartoon stripes
+
+    <img width="1037" height="783" alt="image" src="https://github.com/user-attachments/assets/edaa7192-5b0a-4f7b-835b-59c2e185ad28" />
+
+* `tuerkas128_data_tukers.asm` bitmap for the walking Tuerkas in the intro
+      
+    <img width="298" height="657" alt="image" src="https://github.com/user-attachments/assets/9259cd89-6353-4379-87fb-4f13c4dffc32" />
 
 * The `scoreboard\` folder must contain the file `tuerkas128_SB_routines.asm`. This file includes a lookup table (SB_RenderRoutines) with an entry for every scoreboard type. Perseus has 3 scoreboard types:
   * DIGIT: It displays a variable by printing a number (for instance, number of coins, or number of knives)
