@@ -103,7 +103,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
 
 * The `screens\` folder must contains 3 files:
   * `tuerkas128_scr_blocks.asm`: the definition of the blocks (tiles)
-  * `tuerkas128_scr_superblocks.asm`: the definition of the superblocks (a suet of blocks)
+  * `tuerkas128_scr_superblocks.asm`: the definition of the superblocks (a set of blocks)
   * `tuerkas128_scr_map.asm`: the definition of the screens (usiing blocks, superblocks, animated blocks, sprites, screen areas, breath areas and portals)
   
 _______________________________
