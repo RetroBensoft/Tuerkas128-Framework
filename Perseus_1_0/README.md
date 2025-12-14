@@ -55,7 +55,13 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
   * The `graphics\SPR\` folder contains the bitmaps included in `tuerkas128_spr_bitmaps.asm`.
   * The `graphics\MAINCHAR\` folder must containt a file `tuerkas128_spr_bitmap.asm` with the bitmap of the main char. **SPOILERS AHEAD** Perseus includes two extra files here: one for the bitmap of Perseus himself and another one for the bitmpa of the unexpected appearance of Medusa.
  
-* The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch. Perseus, for instance, includes in this folder the file `tuerkas128_code_text.asm` with routines for printing text on screen.
+* The `intro_menu\` folder contains all the files the game needs for the intro and the menu. These files must be included in the file `bank_S1.asm`, in the root directory. The only requirement for the intro and menu files is that a PUBLIC routine named *T128_IntroBS1* must exists in one of this files. This routine is called right after the game is loaded. The framework does not provided code for creating the intro or the menu. All of it must be coded in assembly language from scratch. Perseus includes in this folder
+  * `tuerkas128_code_intro.asm` routines for rendering the intro
+  * `tuerkas128_code_text.asm` routines for managing the menu
+  * `tuerkas128_code_text.asm` routines for printing text on screen
+  * `tuerkas128_data_intro_tittle.asm` bitmap and attributes for the intro tittle
+  <img width="666" height="168" alt="image" src="https://github.com/user-attachments/assets/76c48436-049b-458c-8770-e0784ff46f40" />
+  * `tuerkas128_data_notAI.asm` bitmap and attributes for the lower-right graphic in the menu
 
 * The `scoreboard\` folder must contain the file `tuerkas128_SB_routines.asm`. This file includes a lookup table (SB_RenderRoutines) with an entry for every scoreboard type. Perseus has 3 scoreboard types:
   * DIGIT: It displays a variable by printing a number (for instance, number of coins, or number of knives)
