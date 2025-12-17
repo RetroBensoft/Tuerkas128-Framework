@@ -126,6 +126,14 @@ Sara & Susana
   * `tuerkas128_AY_instruments.asm`: the definition of the instruments used in the FX & music files
   * `tuerkas128_AY_FX.asm`: the definition of every FX
   * `tuerkas128_AY_music.asm`: the definition of every song
+    
+### Caveats
+* Perseus uses masked sprites, although Tuerkas128 Framewwork can be used with unmasked sprites. Using unmasked sprites is a great way to save memory (it halves used memory) so that in could be used to add features. However, unmasked sprites feature has not been tested. 
+* Perseus has a health bar and only one life. Number of lives could be implemented using Gamevars, but Tuerkas128 Framework has not data structures or routines to manage checkpoints. If a game needs number of lives and a mechanism to give the main char back to life at a specific position in a specific screen, then the Framework should be modified somehow to implement it.
+* Perseus data and code are not compressed with any kind of compressor, such as ZX0 or ZX7. The Tuerkas128 Framework loader does not make any type of decompression. This produces a long-to-load .tap file. I'm sure there is someone out there who is able to improve this easily.
+* Perseus uses screen areas, breath areas and portals. These features are strongly integrated in Tukerkas128 Framework because of design decisions (the philosophy of Tuerkas128 Framework is produce highly customizable games, so maybe those were bad decisions in hindsight). But if a game developed with Tuerkas128 Framework does not need some of these features, it wouldn't be difficult to get rid of them.
+* Colisiones con elementos de pantalla es un poco peculiar, pero puede servir para el 99% de los juegos. Para el 1% restante habría que hacer pequeñas adaptacionrs
+
   
 _______________________________
 
