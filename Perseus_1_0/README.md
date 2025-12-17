@@ -116,9 +116,9 @@ Sara & Susana
   The framework does not include code to render the scoreboard, so it must be written for a specific game. Every value included in the SB_RenderRoutines lookup table is the address of the assembly routine that renders a particular piece in the scoreboard. There is a file in `scoreboard\` for every scoreboard type. Each of these files implements the routine of the corresponding scoreboard type. These files must be included at the end of the file `framework\tuerkas128_code_scoreboard.asm`.
 
 * The `screens\` folder must contain 3 files:
-  * `tuerkas128_scr_blocks.asm`: the definition of the blocks (tiles)
+  * `tuerkas128_scr_blocks.asm`: the definition of the blocks (equivalent to "tiles" in some engines)
   * `tuerkas128_scr_superblocks.asm`: the definition of the superblocks (a set of blocks)
-  * `tuerkas128_scr_map.asm`: the definition of the screens (usiing blocks, superblocks, animated blocks, sprites, screen areas, breath areas and portals)
+  * `tuerkas128_scr_map.asm`: the definition of the screens (blocks, superblocks, animated blocks, sprites, screen areas, breath areas and portals)
  
 * The `sound\` folder must contain 5 files:
   * `tuerkas128_AY_constants.asm`: the index numbers for every FX and song
