@@ -113,7 +113,7 @@ Sara & Susana
   * BAR:  It displays a variable by rendering a bar (for instance, energy)
   * ICON: It displays an on/off variable (for instance, invisibility or speed up)
   
-  The framework does not include code to render the scoreboard, so it must be written for a specific game. The values defined in the SB_RenderRoutines lookup table are the addresses of the assembly routine that renders every piece of scoreboard. There is a file in `scoreboard\` for every scoreboard type. Every file implements its routine. These files must be included at the of the file `framework\tuerkas128_code_scoreboard.asm`.
+  The framework does not include code to render the scoreboard, so it must be written for a specific game. Every value included in the SB_RenderRoutines lookup table is the address of the assembly routine that renders a particular piece in the scoreboard. There is a file in `scoreboard\` for every scoreboard type. Each of these files implements the routine of the corresponding scoreboard type. These files must be included at the end of the file `framework\tuerkas128_code_scoreboard.asm`.
 
 * The `screens\` folder must contain 3 files:
   * `tuerkas128_scr_blocks.asm`: the definition of the blocks (tiles)
