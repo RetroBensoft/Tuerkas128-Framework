@@ -20,7 +20,7 @@ Available in [itchio](https://retrobensoft.itch.io/perseus)
 * Manuel Pena (original sketch of Graia)
 * Ramón Fernández Ameijeiras (sinclair joystick tester)
 * David Gonzalo aka Z80user (code optimization for the loader)
-* André Leão (portuguese version review)​
+* André Leão (portuguese version proofreading)​
 
 ### Dedicated to
 Sara & Susana
