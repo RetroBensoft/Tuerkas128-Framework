@@ -63,8 +63,7 @@ Sara & Susana
     1. Perseus has 40 states
     2. There's a lot of state transitions to provide all the actions that the main char can do.
   
-    Read `_doc_\perseus_FSM.ods` to learn all the states and all the states transitions.
-    Despite the complexity, it would be much more complex if the FSM paradigm were not used. So I strongly recomend to use this paradigm to code highly elaborated behaviours.
+    Read `_doc_\perseus_FSM.ods` to learn all the states and all the states transitions. Despite the complexity, it would be much more complex if the FSM paradigm were not used. So I strongly recomend to use this paradigm to code highly elaborated behaviours.
   * The `fsm\AB\` folder contains framework files which must not be modified or deleted. There is one file for every animated block class. The framework has 5 predefined animated block classes.
   
 * The `gamevars\` folder contains the game variables and timers. For instance: energy, collected objects or any other variable that the game needs to take into account. It also defines which game variables are updated on the scoreboard. The parameter type of GameVar is an important one. It is used to call the appropriate GameVar rendering routine included in the folder `scoreboard\`.
