@@ -56,13 +56,19 @@ Loader:				ld      sp, 0
 					ld		a, %11100111
 					ld		($c000), a						; Write 11100111 in bank 0
 ;
-					ld		a, ($5b5c)					
-					ld		e, a							; Save last value of port 7ffd in register e
-					ld		a, ($5b67)				
-					ld		d, a							; Save last value of port 1ffd in register d
+					; ld		a, ($5b5c)					
+					; ld		e, a							; Save last value of port 7ffd in register e
+					; ld		a, ($5b67)				
+					; ld		d, a							; Save last value of port 1ffd in register d
+
+					ld  de, 410h							; 1ffd=4 - 48k basic ROM, Motor off, normal paging
+															; 7ffd=10h - default
+
 ;
-					and		%11111000
-					or		%00000011					
+					; and		%11111000
+					; or		%00000011					
+					ld		a, 3							; allram mode
+
 					ld		bc, $1ffD
 					out		(c), a							; Select special paging mode (+2A/+3) RAM 4 / RAM 5 / RAM 6 / RAM 7
 ;
