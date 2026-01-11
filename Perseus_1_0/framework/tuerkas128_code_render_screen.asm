@@ -89,7 +89,10 @@ SDS_Label_01:		pop		hl
 ; 	ix = main character sprite address
 ;
 
-T128_ScreenLimits: 	ld		a, (ix+13)
+T128_ScreenLimits: 	bit		6, (ix+SPR_PARAM.FLAGS)		; If Main char sprite is inactive, then no need to check screen limits; this avoids
+					ret		z							; bug reported by Thealfest if Main Char is killed when moving to another screen
+;
+					ld		a, (ix+13)
 					and		%00000001
 					jr		nz, CL_Label_02				; If RIGHT state, then no need to check left border
 					ld		a, (ix+10)
